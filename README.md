@@ -1,1 +1,21 @@
-# Note Taker Starter Code
+# Challenge 11 - Note Taker App
+
+## Description
+
+This weeks challenge is to create a notetaker app in using express.js. This app should be deployed live on heroku and accessible publicly.
+
+## Installation and Deployment
+
+This application is deployed at: [PLACEHOLDER](#)
+
+## Screeshots
+
+TODO: Add screenshot
+
+## Authors and acknowledgment
+
+This homework assignment was completed and developed by Myles Smith. Start code wsa provided by GWU/Trilogy Ed.
+
+## Project status
+
+This project is feature complete according to the acceptance criteria and there are currently no plans for further development.
