@@ -24,7 +24,7 @@ app.post('/notes', (req, res) => {
     if (err) throw err;
     const notesArray = JSON.parse(data);
     notesArray.push(newNote);
-    fs.writeFile('./db/db.json', JSON.parse(notesArray), (err) => {
+    fs.writeFile('./db/db.json', JSON.stringify(notesArray), (err) => {
       if (err) throw err;
       res.json(notesArray);
     })
