@@ -6,7 +6,7 @@ const app = express();
 
 app.get('/notes', (req, res) => {
   //TODO: read db.json, return all notes as json
-  fs.readFile('../db/db.json', (err, data) => {
+  fs.readFile('./db/db.json', (err, data) => {
     if (err) throw err;
     res.json(JSON.parse(data));
   })
@@ -20,11 +20,11 @@ app.post('/notes', (req, res) => {
     title,
     text
   };
-  fs.readFile('../db/db.json', (err, data) => {
+  fs.readFile('./db/db.json', (err, data) => {
     if (err) throw err;
     const notesArray = JSON.parse(data);
     notesArray.push(newNote);
-    fs.writeFile('../db/db.json', notesArray, (err) => {
+    fs.writeFile('./db/db.json', notesArray, (err) => {
       if (err) throw err;
       res.json(notesArray);
     })
