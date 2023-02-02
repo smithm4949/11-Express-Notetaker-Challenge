@@ -4,13 +4,9 @@
 
 This weeks challenge is to create a notetaker app in using express.js. This app should be deployed live on heroku and accessible publicly.
 
-## Installation and Deployment
+## Deployment
 
-This application is deployed at: [PLACEHOLDER](#)
-
-## Screeshots
-
-TODO: Add screenshot
+This application is deployed at: [https://gentle-hamlet-49719.herokuapp.com/](https://gentle-hamlet-49719.herokuapp.com/)
 
 ## Authors and acknowledgment
 
