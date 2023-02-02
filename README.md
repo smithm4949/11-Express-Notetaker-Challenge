@@ -2,7 +2,7 @@
 
 ## Description
 
-This weeks challenge is to create a notetaker app in using express.js. This app should be deployed live on heroku and accessible publicly.
+This weeks challenge was to create a notetaker app in using express.js. This app should be deployed live on heroku and accessible publicly.
 
 ## Deployment
 
@@ -10,7 +10,7 @@ This application is deployed at: [https://gentle-hamlet-49719.herokuapp.com/](ht
 
 ## Authors and acknowledgment
 
-This homework assignment was completed and developed by Myles Smith. Start code wsa provided by GWU/Trilogy Ed.
+This homework assignment was completed and developed by Myles Smith. Starter code was provided by GWU/Trilogy Ed.
 
 ## Project status
 
