@@ -52,8 +52,6 @@ app.delete('/notes/:id', (req, res) => {
       })
     }
   })
-  console.log(`/api/notes/${id} DELETE hit`);
-  res.json(`/api/notes/${id} DELETE hit`);
 });
 
 module.exports = app;
