@@ -5,7 +5,6 @@ const { v4: uuidv4 } = require('uuid');
 const app = express();
 
 app.get('/notes', (req, res) => {
-  //TODO: read db.json, return all notes as json
   fs.readFile('./db/db.json', (err, data) => {
     if (err) throw err;
     res.json(JSON.parse(data));
@@ -13,7 +12,6 @@ app.get('/notes', (req, res) => {
 });
 
 app.post('/notes', (req, res) => {
-  //TODO: receive new note, add to db.json, return note
   const { title, text } = req.body;
   const newNote = {
     id: uuidv4(),
@@ -32,7 +30,6 @@ app.post('/notes', (req, res) => {
 });
 
 app.delete('/notes/:id', (req, res) => {
-  //TODO: receive path param :id, remove note with matching id
   const { id } = req.params;
   fs.readFile('./db/db.json', (err, data) => {
     if (err) throw err;
@@ -44,8 +41,6 @@ app.delete('/notes/:id', (req, res) => {
         break;
       }
     }
-    //if index is -1 still, do nothing? check gitlab
-    //else, remove that element and write file
 
     if (matchingIndex === -1) {
       return;
